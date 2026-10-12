@@ -22,10 +22,25 @@ they feel. None of it is real mynd code or data.
 
 ## Setup (not timed)
 
-1. Backend: see [`backend/README.md`](backend/README.md). It runs in Docker on port 8080.
-2. Android: see [`android/README.md`](android/README.md). Open the `android/` folder in Android
+1. **Make your own private copy of this repo.** Please don't fork it, and don't push to this
+   repo: other candidates have access to it, and a fork could be visible to them. Instead, clone
+   it and push it to a new private repo on your own GitHub account:
+
+   ```sh
+   git clone https://github.com/mynd-app/software-engineer-challenge.git mynd-challenge
+   cd mynd-challenge
+   git remote remove origin
+   gh repo create mynd-challenge --private --source . --push
+   ```
+
+   (Without the GitHub CLI: create an empty private repo on github.com, then
+   `git remote add origin <its URL>` and `git push -u origin main`.)
+2. **Share it with us.** In your new repo, go to Settings -> Collaborators and invite
+   **`danny-mynd`**. Keep the repo private.
+3. Backend: see [`backend/README.md`](backend/README.md). It runs in Docker on port 8080.
+4. Android: see [`android/README.md`](android/README.md). Open the `android/` folder in Android
    Studio and run it on an emulator against your local backend.
-3. Create a branch called `submission` and start your clock.
+5. Create a branch called `submission` and start your clock.
 
 ## The tasks
 
@@ -44,8 +59,9 @@ Do them in any order. Read all of them before you start.
 
 - Commit as you go on your `submission` branch. Small commits with plain messages are great - we
   read the history.
-- Push the branch and open a pull request into `main` in this repo before your 4 hours are up.
-  Put your start and end times in `NOTES.md`.
+- Push the branch to **your private repo** and open a pull request from `submission` into `main`
+  there before your 4 hours are up. Leave `main` as it was. Put your start and end times in
+  `NOTES.md`, then email danny@myndapp.com.au the link to your pull request.
 - If you used an agent config file of your own (`CLAUDE.md`, `AGENTS.md`, rules files), commit it.
   If you're happy to, include a few of your key prompts or a short excerpt of an agent session in
   `NOTES.md`.
