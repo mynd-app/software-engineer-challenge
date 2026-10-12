@@ -1,4 +1,4 @@
-# mynd engineering challenge
+# mynd Software Engineer challenge
 
 Thanks for taking the time to do this. This repo is a small, made-up slice of a mynd-like
 product: a Laravel API and a Kotlin Multiplatform Android app where employees check in with how
