@@ -1,0 +1,29 @@
+<?php
+
+namespace Database\Factories;
+
+use App\Models\Company;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * @extends Factory<Company>
+ */
+class CompanyFactory extends Factory
+{
+    public function definition(): array
+    {
+        return [
+            'name' => fake()->company(),
+            'insights_enabled' => false,
+            'insights_user_default' => false,
+        ];
+    }
+
+    public function withInsights(?bool $userDefault = true): static
+    {
+        return $this->state([
+            'insights_enabled' => true,
+            'insights_user_default' => $userDefault,
+        ]);
+    }
+}
