@@ -70,5 +70,5 @@ Do them in any order. Read all of them before you start.
 
 We'll book a 1-hour walk-through where you show us what you did, talk through your choices, and
 tell us what you'd do next. For about 10 minutes of it, we'll ask you to extend your work live
-with your own tools while we watch, so have your usual setup ready. It can be after hours if that
-suits you better.
+with your own tools while we watch, so have your usual setup ready. It runs during business
+hours.
